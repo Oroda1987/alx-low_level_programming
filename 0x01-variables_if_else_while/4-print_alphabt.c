@@ -1,13 +1,25 @@
 #include <stdio.h>
 /**
- *
- * main - main function
+ * main - Entry point
  *
  * Return: Always 0
  *
  */
+
 int main(void)
 {
-	int n, m(n % 1o), o
-		if (m >5)
-			print
+	char n;
+
+	for (n = 'a'; n <= 'z'; n++)
+
+	{
+		if (n == 'q' || n == 'e')
+		{
+			continue;
+		}
+		putchar(n);
+	}
+	putchar('\n');
+	return (0);
+}
+
