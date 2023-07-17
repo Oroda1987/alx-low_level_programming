@@ -17,15 +17,15 @@ int main(void)
 		{
 			for (f = e + 1; f <= 9; f++)
 			{
-				putchar(d + '0');
-				putchar(e + '0');
-				putchar(f + '0');
-
 				if (d == 8 && e == 9 && f == 0)
 				break;
+					putchar(d + '0');
+					putchar(e + '0');
+					putchar(f + '0');
 					putchar(',');
 					putchar(' ');
 			}
+			
 		}
 	}
 	putchar('\n');
