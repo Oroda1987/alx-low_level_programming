@@ -9,9 +9,17 @@ int  main(void)
 {
 	int m;
 
-	for (m = 0; m < 16; m++)
+	for (m = 0; m <= 15; m++)
 	{
+		if (m < 10)
+		{
 		putchar(m + '0');
+		}
+		else
+		{
+		putchar(m - 10 + 'a');
+		}
+
 	}
 	putchar('\n');
 
