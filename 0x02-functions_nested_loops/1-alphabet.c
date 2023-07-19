@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include "main.h"
+#include <unistd.h>
 /**
- * main -Entry point
+ * print_alphabet - print alphabet in lower case
  *
- * Return: Always 0 (Success)
+ * Return: void if successful
  */
 
 void print_alphabet(void);
-
 int main(void)
 {
 	char b;
@@ -16,5 +17,4 @@ int main(void)
 		putchar(b);
 	}
 	putchar('\n');
-	return (0);
-}	
+}
