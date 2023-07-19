@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 #include <unistd.h>
 /**
  * print_alphabet - print alphabet in lower case
@@ -8,6 +8,7 @@
  */
 
 void print_alphabet(void);
+
 int main(void)
 {
 	char b;
@@ -18,3 +19,4 @@ int main(void)
 	}
 	putchar('\n');
 }
+
