@@ -12,34 +12,23 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (a % 15 == 0)
+		if ((a % 3 == 0) && (a % 5 == 0))
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
+			printf("FizzBuzz");
 		}
 		else if (a % 5 == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
+			printf("Buzz");
 		}
 		else if (a % 3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
+			printf("Fizz");
 		}
 		else
-			_putchar('a');
-		_putchar('\n');
+		{
+			printf("%d", a);
+		}
 	}
+	printf("\n");
 	return (0);
-}	
+}
