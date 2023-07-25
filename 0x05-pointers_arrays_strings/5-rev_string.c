@@ -18,9 +18,13 @@ void rev_string(char *s)
 		length = strlen(s);
 
 		for (a = 0, b = length - 1; a < b; a++, b--)
-			char temp = s[a];
+		{
+			char temp;
 
+			temp = s[a];
 			s[a] = s[b];
 			s[b] = temp;
+
+		}
 	}
 }
