@@ -8,10 +8,13 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	if (strcmp(s1, s2) == 0)
-		return (*s1 == *s2);
+	int value;
+	value = strcmp(s1, s2);
+	if (value < 0)
+		return (s1 < s2);
+	else if (value > 0)
+		return (s1 > s2);
 	else
-		return (*s1 != *s2);
-	return (0);
+		return (0);
 
 }
