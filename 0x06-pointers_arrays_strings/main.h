@@ -19,5 +19,5 @@ char *cap_string(char *);
 
 char *leet(char *);
 
-int _putcharr(char c);
+int _putchar(char c);
 #endif
