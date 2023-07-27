@@ -9,12 +9,14 @@
 char *string_toupper(char *s)
 {
 	int i;
-	int length = strlen(s);
 
-	for (i = 0; i < length; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		s[i] = toupper(s[i]);
+		if (s[i] >= 'a' && s[i] <= 'z')
+		{
+			s[i] = s[i] - 32;
+		}
 	}
-	return (0);
+	return (s);
 
 }
