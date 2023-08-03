@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *_puts_recursion - function like puts()
- *@s:Input
- *Return: 0
+ *_puts_recursion - function that prints  a string
+ *@s:Perameter to be printed
+ *Return: No value
  */
 
 void _puts_recursion(char *s)
