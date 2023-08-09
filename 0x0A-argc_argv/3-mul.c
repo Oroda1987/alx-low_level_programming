@@ -18,9 +18,15 @@ int main(int argc, char **argv)
 	{
 		printf("%s\n", argv[i]);
 
+		if (argc < 3 || argc > 3)
+		{
+			printf("Error\n");
+			return (1);
+		}
+
 		for (i = 1; i < argc; i++)
 		{
-			x = strtol(argv[i], NULL, 10);
+			x = atoi(argv[i]);
 			result = result * x;
 		}
 	}
