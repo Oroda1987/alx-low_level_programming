@@ -8,11 +8,8 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-
-	for (i = 0; i < **argv; i++)
-	{
+	(void)argv; /*Ignore argv*/
 		printf("%d\n", argc);
-	}
-	return (0);
+
+		return (0);
 }
