@@ -1,6 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include "function_pointers.h"
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
+#include <stddef.h>
 
 int _putchar(char c);
 
