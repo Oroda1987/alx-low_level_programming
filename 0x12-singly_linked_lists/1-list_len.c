@@ -1,8 +1,10 @@
 #include "lists.h"
-/*
- *list_len- prints length of string
- *@h: head n ode
- *Return: length of node
+/**
+ *list_len - length of sring
+ *
+ *@h: head node
+ *
+ * Return: lengthof node
  */
 size_t list_len(const list_t *h)
 {
