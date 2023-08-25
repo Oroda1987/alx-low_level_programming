@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stddef.h>
-
+#include "lists.h"
 /**
  *print_list - print all elements in a list
  *
  *@h: nodes to be used
  *Return: the number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
@@ -25,3 +26,4 @@ size_t print_list(const list_t *h)
 		count++;
 	}
 	return (count);
+}
