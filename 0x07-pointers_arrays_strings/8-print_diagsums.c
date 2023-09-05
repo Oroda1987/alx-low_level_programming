@@ -7,20 +7,20 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, row, col, sum = 0, a[size];
+	int sum1, sum2, y;
 
-	if (row == col)
+	sum1 = 0;
+	sum2 = 0;
+
+	for (y = 0; y < size; y++)
 	{
-		for (i = 0; i < row; i++)
-		{
-			for (j = 0; j < col; j++)
-			{
-				if (i == j)
-					sum = (sum + a[i][j]);
-				printf("%d", sum);
-			}
-		}
+		sum1 = sum1 + a[y * size + y];
 	}
-	else
-	printf("Matrix is not square diagonal sum is not possible");
+
+	for (y = size - 1; y >= 0; y--)
+	{
+		sum2 += a[y * size + (size - y - 1)];
+	}
+
+	printf("%d, %d\n", sum1, sum2);
 }
